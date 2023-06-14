@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#009efa, #4ffbdf);
+}
+.container {
+  width: 400px;
+  height: min-content;
+  background-color: white;
+  border-radius: 12px;
+  padding: 28px;
+}
+.search-box {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.search-box input {
+  width: 80%;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: black;
+  background-color: whitesmoke;
+  padding: 12px 16px;
+  border-radius: 15px;
+}
+.search-box button {
+  width: 46px;
+  height: 46px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+}
+.search-box button:hover {
+  background: linear-gradient(#009efa, #4ffbdf);
+  color: white;
+}
+.location-not-found {
+  margin: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.location-not-found h1 {
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 15px;
+}
+.location-not-found img {
+  width: 80%;
+}
+.weather-body {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+.weather-body img {
+  width: 60%;
+}
+.weather-box {
+  margin: 20px 0px;
+  text-align: center;
+}
+.weather-box .tempreture {
+  font-size: 40px;
+  font-weight: bolder;
+  position: relative;
+}
+.weather-box .tempreture sup {
+  font-size: 20px;
+  position: absolute;
+  font-weight: bold;
+}
+.weather-box .description {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.weather-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+.humidity {
+  margin-left: 20px;
+}
+.wind {
+  margin-right: 20px;
+}
+.text span {
+  font-size: 20px;
+  font-weight: bolder;
+}
